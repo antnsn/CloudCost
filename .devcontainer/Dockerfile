@@ -1,4 +1,4 @@
-echo 'FROM python:3.9-slim
+FROM python:3.9-slim
 
 # Avoid warnings by switching to noninteractive
 ENV DEBIAN_FRONTEND=noninteractive
@@ -16,4 +16,4 @@ ENV DEBIAN_FRONTEND=dialog
 WORKDIR /workspace
 
 # Install Azure SDKs for Python
-RUN pip install azure-mgmt-costmanagement azure-identity' > .devcontainer/Dockerfile
+RUN pip install azure-mgmt-costmanagement azure-identity
