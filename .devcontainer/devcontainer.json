@@ -1,0 +1,15 @@
+echo '{
+    "name": "Azure Cost Estimator",
+    "dockerFile": "Dockerfile",
+    "settings": { 
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "postCreateCommand": "pip install --upgrade pip",
+    "extensions": [
+        "ms-python.python",
+        "ms-azuretools.vscode-docker"
+    ],
+    "forwardPorts": [],
+    "appPort": [],
+    "shutdownAction": "none"
+}'
